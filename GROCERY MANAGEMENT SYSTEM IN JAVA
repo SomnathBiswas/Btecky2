@@ -1,0 +1,260 @@
+import java.util.*;
+public class Grocery {
+static Grocery g = new Grocery();
+Scanner sc = new Scanner(System.in);
+void start() {
+System.out.println(&quot;&quot;);
+System.out.println(&quot;Now select what item you want to buy :\n1. Tea 2. Coffee 3. Rava\n4. Flour 5. Sugar
+6.Salt\n&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+System.out.println(&quot;&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int ch = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+System.out.println(&quot;&quot;);
+switch (ch) {
+case 1:
+System.out.println(&quot;Select what Tea brand you want :\n1.Wagh Bakri 1kg 2.Lipton 1kg 3.Red Label 1kg 4.Taj
+Mahal 1kg 5.Changed my mind&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;---------------------------------------------------------------------------------------&quot;);
+if (brand == 1) {
+System.out.println(&quot;You chose &#39;Wagh Bakri&#39; Tea\n.....................................................................................\nYour bill is
+500rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand == 2) {
+System.out.println(&quot;You chose &#39;Lipton&#39; Tea\n.........................................................................................\nYour bill is
+490rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand == 3) {
+System.out.println(&quot;You chose &#39;Red Label&#39; Tea\n.........................................................................................\nYour bill is
+450&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand == 4) {
+System.out.println(&quot;You chose &#39;Taj Mahal&#39; Tea\n........................................................................................\nYour bill is
+550rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+
+}
+break;
+
+case 2:
+System.out.println(&quot;Select what Coffee brand you want :\n1.Bru 1kg 2.NesCafe 1kg 3.Bevzilla 1kg 4.Range 1kg
+5.Changed my mind&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand1 = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+if (brand1 == 1) {
+System.out.println(&quot;You chose &#39;Bru&#39; Coffee\n.........................................................................................\nYour bill is
+475rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand1 == 2) {
+System.out.println(&quot;You chose &#39;NesCafe&#39; Coffee\n.........................................................................................\nYour bill is
+599rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand1 == 3) {
+System.out.println(&quot;You chose &#39;Bevzilla&#39; Coffee\n.........................................................................................\nYour bill is
+850rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand1 == 4) {
+System.out.println(&quot;You chose &#39;Range&#39; Coffee\n.........................................................................................\nYour bill is
+699rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+}
+break;
+case 3:
+System.out.println(&quot;Select what Rava brand you want :\n1. Suzi 1kg 2.Royal 1kg 3.Bombay 1kg 4.Pranav 1kg
+5.Changed my mind&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand2 = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+if (brand2 == 1) {
+System.out.println(&quot;You chose &#39;Suzi&#39; Rava\n.........................................................................................\nYour bill is
+50rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand2 == 2) {
+System.out.println(&quot;You chose &#39;Royal&#39; Rava\n.........................................................................................\nYour bill is
+100rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+
+} else if (brand2 == 3) {
+System.out.println(&quot;You chose &#39;Bombay&#39; Rava\n.........................................................................................\nYour bill is
+60rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else if (brand2 == 4) {
+System.out.println(&quot;You chose &#39;Pranav&#39; Rava\n.........................................................................................\nYour bill is
+10rs&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+}
+break;
+case 4:
+System.out.println(&quot;Select what Flour brand you want :\n1.Aashirvaad 10kg 2.Chakki 10kg 3.Fortune 10kg
+4.Amul 10kg 5.Changed my mind&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand3 = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+if (brand3 == 1) {
+System.out.println(&quot;You chose &#39;Aashirvaad&#39; Flour\n.........................................................................................\nYour bill
+is 450rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand3 == 2) {
+System.out.println(&quot;You chose &#39;Chakki&#39; Flour\n........................................................................................\nYour bill is
+300rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand3 == 3) {
+System.out.println(&quot;You chose &#39;Fortune&#39; Flour\n........................................................................................\nYour bill is
+400rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand3 == 4) {
+System.out.println(&quot;You chose &#39;Amul&#39; Flour\n........................................................................................\nYour bill is
+400rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+}
+break;
+case 5:
+System.out.println(&quot;Select what Sugar brand you want :\n1.Madhur 10kg 2.White Label 10kg 3.Mantra 10kg
+4.Royal 10kg 5.Changed my mind&quot;);
+
+System.out.println(&quot;&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand4 = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+if (brand4 == 1) {
+System.out.println(&quot;You chose &#39;Madhur&#39; Sugar\n........................................................................................\nYour bill is
+500rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand4 == 2) {
+System.out.println(&quot;You chose &#39;White Label&#39; Sugar\n........................................................................................\nYour bill
+is 450rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand4 == 3) {
+System.out.println(&quot;You chose &#39;Mantra&#39; Sugar\n........................................................................................\nYour bill is
+400rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand4 == 4) {
+System.out.println(&quot;You chose &#39;Royal&#39; Sugar\n........................................................................................\nYour bill is
+550rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+}
+break;
+case 6:
+System.out.println(&quot;Select what Salt brand you want :\n1.Tata 1kg 2.Aashirvaad 1kg 3.Royal 1kg 4.Puro 1kg
+5.Changed my mind&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+System.out.print(&quot;Your choice --&gt; &quot;);
+int brand5 = sc.nextInt();
+System.out.println(&quot;&quot;);
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+if (brand5 == 1) {
+System.out.println(&quot;You chose &#39;Tata&#39; Salt\n........................................................................................\nYour bill is 25rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand5 == 2) {
+System.out.println(&quot;You chose &#39;Aashirvaad&#39; Salt\n........................................................................................\nYour bill is
+20rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand5 == 3) {
+System.out.println(&quot;You chose &#39;Royal&#39; Salt\n........................................................................................\nYour bill is
+50rs&quot;);
+System.out.println(&quot;........................................................................................&quot;);
+} else if (brand5 == 4) {
+System.out.println(&quot;You chose &#39;Puro&#39; Salt\n........................................................................................\nYour bill is 60rs&quot;);
+
+System.out.println(&quot;.........................................................................................&quot;);
+} else {
+System.out.println(&quot;Press &#39;0&#39; to return to item list&quot;);
+int r1 = sc.nextInt();
+if (r1 == 0) {
+g.start();
+}
+}
+break;
+
+}
+}
+void end() {
+System.out.println(&quot;If you want to buy another item then press 1 else press 2&quot;);
+int press=sc.nextInt();
+if(press==1){
+g.start();}
+else if(press==2)
+{
+/*System.out.println(&quot;If you want to buy an new item type &#39;again&#39; else say &#39;bye&#39; and leave&quot;);
+String again = sc.next();
+String a = sc.next();
+if (again == again) {
+g.start();
+}
+else if (a == &quot;bye&quot;) {
+*/
+System.out.println(&quot;-----------------------------------------------------------------------------------------&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;Thank you pls visit us again &lt;3&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+}
+}
+
+public static void main (String[]args)
+{
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;\t SALLU GROCERY STORES&quot;);
+System.out.println(&quot;&quot;);
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.println(&quot;!!!------------------------------Welcome to Sallu Market-------------------------------!!!&quot;);
+
+System.out.println(&quot;.........................................................................................&quot;);
+System.out.println(&quot;&quot;);
+g.start();
+g.end();
+}
+
+}

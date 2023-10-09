@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class student {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+   int sub1,sub2,sub3,sub4;
+   System.out.println("enter total marks");
+   
+int total =sc.nextInt();
+
+
+   System.out.println("enter English marks ");
+   sub1=sc.nextInt();
+     System.out.println("enter evs marks  ");
+   sub2=sc.nextInt();
+   System.out.println("enter maths marks "); 
+   sub3=sc.nextInt();
+	System.out.println("enter bengali  marks "); 
+   sub4=sc.nextInt();
+
+  
+
+
+  
+float marks=sub1+sub2+sub3+sub4;
+float percentage=(marks/total)*100;
+
+if(percentage>=40.0 && sub1>=33 && sub1>=33 && sub3>=33){
+System.out.println("you passed the exam with percentage : "+ percentage+" %");
+}
+else
+{ System.out.println("percentage is :"+ percentage);
+    System.out.println("you failed the exam");
+}
+
+}
+}
